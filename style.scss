@@ -1,0 +1,317 @@
+// РЕСУРСЫ САЙТА:
+// ЦВЕТА:
+$color_1: #000;
+$color_2: #fff;
+$color_3: #f2952d;
+$color_4: #eeb16d;
+$color_5: #808080;
+$color_6: #333333;
+$color_7: #4d4d4d;
+$color_8: #404040;
+
+// ШРИФТЫ:
+// подключение файла шрифтов:
+// @use '_fonts' as *;
+
+// шрифт заголовков:
+$font_fam_h: Montserrat, sans-serif; //Raleway, sans-serif;
+// шрифт основного текста:
+$font_fam_main: "Open Sans", sans-serif;
+
+// ИЗОБРАЖЕНИЯ:
+// картинка для бекграунда:
+$img_main_beckgr: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/b01f1f1be80954858db0a36a/-min.jpg);
+
+// Т О Т  С А М Ы Й  С П Р А Й Т:
+$img_sprite_cards: url(https://reference-books.neocities.org/images/sprite1.jpeg);
+
+// подключаю миксин для работы с спрайтами:
+// @use "sprite_engin" as *;
+@import "compass";
+$img_cards:sprite-map("img_sprite1/*.png");
+
+
+
+// // сопоставление имён карт и их положений в спрайте:
+
+// // создаю разметку для спрайта:
+// $img_sprite_cards_map: (
+// url: $img_sprite_cards,
+// names:('facebook', 'twitter', 'youtube', 'instagram', 'facebookGray','twitterGray'),
+// columns: 13,
+// rows: 5
+// );
+// вывожу нужные картинки в нужном размере
+.img_1 {
+  // @include backgroundImageBySprite( $img_sprite_cards_map, 'youtube', 30px, 60px);
+
+}
+
+
+
+body {
+  background: {
+    image: $img_main_beckgr;
+    repeat: no-repeat;
+    color: $color_1;
+    size: cover;//110%;
+    position: center;
+  }
+}
+
+// заголовок:
+.header {
+  text-align: center;
+  padding: 90px 0 60px 0;
+  h1 {
+    margin-bottom: 25px;
+
+    font: {
+      size: 3.5rem;
+      weight: normal;
+      family: $font_fam_h;
+    }
+  }
+}
+/* подпись под текстом и её ссылки: */
+.freepic {
+  font-family: $font_fam_main;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: $color_1;
+
+  margin-bottom: 0;
+  a {
+    &:link {
+      color: $color_1;
+      text-decoration: none;
+      border-bottom: 1px solid $color_8;
+    }
+
+    &:visited {
+      color: $color_1;
+      text-decoration: none;
+      border-bottom: 1px solid $color_5;
+    }
+
+    &:active {
+      color: $color_1;
+      text-decoration: none;
+      border-bottom: 1px solid $color_5;
+    }
+    &:hover {
+      color: $color_1;
+      text-decoration: none;
+      border-bottom: 1px solid $color_5;
+    }
+  }
+}
+
+// нижняя секция(основной текст и формы):
+.main {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+// секция с формами:
+.sub_forms {
+  padding: 0 20px 0 20px;
+
+  color: $color_1;
+  font: {
+    family: $font_fam_main;
+    size: 16px;
+  }
+
+
+  * {
+    display: block;
+  }
+  label {
+    margin-bottom: 4px;
+  }
+  input {
+    text-indent: 11px;
+    width: 100%;
+    height: 46px;
+
+    font: {
+      size: inherit;
+      family: $font_fam_main;
+      // weight: 500;
+    }
+    color: inherit;
+    border: none;
+    border-radius: 23px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 80px;
+
+    border: none;
+    font-weight: bold;
+    color: $color_2;
+    text-transform: uppercase;
+    // word-spacing: 4px;
+    background-color: $color_1;
+
+    &:hover {
+      background-color: $color_7;
+    }
+  }
+}
+
+.forms_cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 33px;
+}
+.form_cont {
+  
+}
+
+/* секция с текстом:*/
+.main_text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 33px;
+  margin-bottom: 80px;
+
+  text-align: center;
+  color: $color_1;
+  > * {
+    // max-height: 100%;
+    // margin-bottom: 30px;
+    line-height: 200%;
+  }
+  h2 {
+    margin-bottom: 20px;
+
+    font-size: 25px;
+    font-family: $font_fam_h;
+    font-weight: bold;
+  }
+  p {
+    font-family: $font_fam_main;
+    // letter-spacing: 150%;
+    font-size: 18px;
+  }
+  .text_blok {
+    a {
+      &:link {
+        font-weight: bold;
+        color: $color_1;
+        text-decoration: none;
+        border-bottom: 1px solid $color_3;
+      }
+  
+      &:visited {
+        color: $color_1;
+        text-decoration: none;
+        border-bottom: 1px solid $color_3;
+      }
+  
+      &:active {
+        color: $color_1;
+        text-decoration: none;
+        border-bottom: 1px solid $color_1;
+      }
+      &:hover {
+        color: $color_1;
+        text-decoration: none;
+        border-bottom: 1px solid $color_1;
+      }
+    }
+  }
+  .marked_text {
+    font-weight: bold;
+  }
+}
+
+/* футер и его ссылки: */
+.footer {
+  text-align: center;
+  padding: 3em;
+
+  font-size: 14px;
+  background-color: $color_6;
+  color: $color_2;
+  a {
+    color: $color_2;
+    &:visited {
+      color: $color_2;
+    }
+
+    &:active {
+      color: $color_2;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $color_4;
+    }
+  }
+}
+
+
+// фоновое изображение перестаёт сжиматся:
+@media (max-width: 1250px) {
+  body {
+    background: {
+      size: 1252px;
+      // position-x: center;
+      position-y: top;
+    }
+  }
+}
+
+// фоновое изображение меняет размер, уменьшаются отступы в шапке:
+@media (max-width: 1200px) {
+  body {
+    background-size: cover;
+    background-size: 1200px;
+  }
+  .header {
+    padding-top: 80px;
+  }
+}
+
+// ширина фонового изображения уменьшается:
+@media (max-width: 980px) {
+  body {
+    background-size: 982px;
+  }
+  // .links {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+}
+
+// ширина всего уменьшается, отступы от всего до краёв экрана уменьшаются,
+//   блоки форм и основного текста встают в отдну колонку:
+@media (max-width: 750px) {
+  body {
+    // max-width: 560px;
+    // padding: 310px 10px 0 10px;
+  }
+  // .main {
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+}
+
+// ширина всего уменьшается, блоки с контактами встают в одну колонку:
+@media (max-width: 560px) {
+  body {
+    // max-width: 370px;
+  }
+  // .links {
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+}

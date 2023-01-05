@@ -1,0 +1,33 @@
+//унаследовано и доработано: https://codepen.io/yonatanmn/pen/LVdyYx
+//======== mixin and functions =========//
+
+// деление без ошибки при делении на 0
+@function divideEscape0($a,$b){
+  @if ($b ==0){@return 0};
+  @return $a/$b;
+}
+
+@function getImagePositionFromSprite($iconName,$sprite-name,$columns,$rows){
+    @if (index($sprite-name,-1) > ($columns*$rows)){@error "Incorrect map of sprite: there are more image names than images themselves"};
+    $index: index($sprite-name,$iconName);
+    $row: ceil($index/$columns);
+    $column: $index % $columns;
+  @return percentage(divideEscape0(1,($columns - 1))*($column - 1)) percentage(divideEscape0(1,($rows - 1))*($row - 1));
+}
+
+@mixin backgroundImageBySprite($sprite,$name,$size-x,$size-y:$size-x){
+  background-image: map_get($sprite,url);
+  background-position: getImagePositionFromSprite(
+          $name,
+          map_get($sprite,names),
+          map_get($sprite,columns),
+          map_get($sprite,rows)
+  );
+  height: $size-x;
+  width: $size-y;
+  background-size: $size-x $size-y;//auto $size * (map_get($sprite,rows));
+}
+
+//end of mixin//
+//===================================//
+  
