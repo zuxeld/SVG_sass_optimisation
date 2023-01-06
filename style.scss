@@ -1,3 +1,6 @@
+@use "sass:list";
+
+
 // РЕСУРСЫ САЙТА:
 // ЦВЕТА:
 $color_1: #000;
@@ -29,6 +32,40 @@ $img_sprite_cards: url(https://reference-books.neocities.org/images/sprite1.jpeg
 // @use "sprite_engin" as *;
 @import "compass";
 $img_cards:sprite-map("img_sprite1/*.png");
+.img_cont {
+  background: $img_cards;
+}
+
+$card-names: hearts2 hearts3 hearts4 hearts5 hearts6 hearts7 hearts8 hearts9 hearts10 heartsJ heartsQ heartsK heartsA diamonds2	diamonds3	diamonds4	diamonds5	diamonds6	diamonds7	diamonds8	diamonds9	diamonds10 diamondsJ diamondsQ diamondsK diamondsA clubs2	clubs3	clubs4	clubs5	clubs6	clubs7	clubs8	clubs9	clubs10 clubsJ	clubsQ	clubsK	clubsA spades2	spades3	spades4	spades5	spades6	spades7	spades8	spades9	spades10 spadesJ	spadesQ	spadesK	spadesA back jocker hearts2_wild diamonds2_wild clubs2_wild spades2_wild;
+$i: 0;
+@while $i <= 57 {
+  .img-#{ nth($card-names, $i+1) } {
+    @if $i<10 {
+      background-position: sprite-position($img_cards, tile00#{$i});
+      @include sprite-dimensions($img_cards, tile00#{$i});
+    } @else {
+      background-position: sprite-position($img_cards, tile0#{$i});
+      @include sprite-dimensions($img_cards, tile0#{$i});
+    }
+  }
+  $i: $i + 1;
+}
+// .img1 {
+//   background-position: sprite-position($img_cards, tile000);
+//   @include sprite-dimensions($img_cards, tile000);
+// }
+// .img2 {
+//   background-position: sprite-position($img_cards, tile001);
+//   @include sprite-dimensions($img_cards, tile001);
+// }
+// .img3 {
+//   background-position: sprite-position($img_cards, tile053);
+//   @include sprite-dimensions($img_cards, tile053);
+// }
+.img_cont_cont {
+  display: flex;
+  justify-content:space-around;
+}
 
 
 

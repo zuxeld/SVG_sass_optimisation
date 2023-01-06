@@ -1,17 +1,645 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 30 | @import "compass";
- *    |         ^^^^^^^^^
- *    '
- *   style.scss 30:9  root stylesheet */
+@charset "UTF-8";
+@use "sass:list";
+/* line 35, style.scss */
+.img_cont {
+  background: url('/img_sprite1-seddad450d1.png');
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+/* line 42, style.scss */
+.img-hearts2 {
+  background-position: 0 0;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts3 {
+  background-position: 0 -117px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts4 {
+  background-position: 0 -234px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts5 {
+  background-position: 0 -351px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts6 {
+  background-position: 0 -468px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts7 {
+  background-position: 0 -585px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts8 {
+  background-position: 0 -702px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts9 {
+  background-position: 0 -819px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts10 {
+  background-position: 0 -936px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-heartsJ {
+  background-position: 0 -1053px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-heartsQ {
+  background-position: 0 -1170px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-heartsK {
+  background-position: 0 -1287px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-heartsA {
+  background-position: 0 -1404px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds2 {
+  background-position: 0 -1521px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds3 {
+  background-position: 0 -1638px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds4 {
+  background-position: 0 -1755px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds5 {
+  background-position: 0 -1872px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds6 {
+  background-position: 0 -1989px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds7 {
+  background-position: 0 -2106px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds8 {
+  background-position: 0 -2223px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds9 {
+  background-position: 0 -2340px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds10 {
+  background-position: 0 -2457px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamondsJ {
+  background-position: 0 -2574px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamondsQ {
+  background-position: 0 -2691px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamondsK {
+  background-position: 0 -2808px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamondsA {
+  background-position: 0 -2925px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs2 {
+  background-position: 0 -3042px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs3 {
+  background-position: 0 -3159px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs4 {
+  background-position: 0 -3276px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs5 {
+  background-position: 0 -3393px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs6 {
+  background-position: 0 -3510px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs7 {
+  background-position: 0 -3627px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs8 {
+  background-position: 0 -3744px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs9 {
+  background-position: 0 -3861px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs10 {
+  background-position: 0 -3978px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubsJ {
+  background-position: 0 -4095px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubsQ {
+  background-position: 0 -4212px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubsK {
+  background-position: 0 -4329px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubsA {
+  background-position: 0 -4446px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades2 {
+  background-position: 0 -4563px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades3 {
+  background-position: 0 -4680px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades4 {
+  background-position: 0 -4797px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades5 {
+  background-position: 0 -4914px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades6 {
+  background-position: 0 -5031px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades7 {
+  background-position: 0 -5148px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades8 {
+  background-position: 0 -5265px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades9 {
+  background-position: 0 -5382px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades10 {
+  background-position: 0 -5499px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spadesJ {
+  background-position: 0 -5616px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spadesQ {
+  background-position: 0 -5733px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spadesK {
+  background-position: 0 -5850px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spadesA {
+  background-position: 0 -5967px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-back {
+  background-position: 0 -6084px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-jocker {
+  background-position: 0 -6201px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-hearts2_wild {
+  background-position: 0 -6318px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-diamonds2_wild {
+  background-position: 0 -6435px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-clubs2_wild {
+  background-position: 0 -6552px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 42, style.scss */
+.img-spades2_wild {
+  background-position: 0 -6669px;
+  height: 117px;
+  width: 81px;
+}
+
+/* line 65, style.scss */
+.img_cont_cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 89, style.scss */
+body {
+  background-image: url(https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/b01f1f1be80954858db0a36a/-min.jpg);
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 100, style.scss */
+.header {
+  text-align: center;
+  padding: 90px 0 60px 0;
+}
+/* line 103, style.scss */
+.header h1 {
+  margin-bottom: 25px;
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-family: Montserrat, sans-serif;
+}
+
+/* подпись под текстом и её ссылки: */
+/* line 114, style.scss */
+.freepic {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #000;
+  margin-bottom: 0;
+}
+/* line 122, style.scss */
+.freepic a:link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #404040;
+}
+/* line 128, style.scss */
+.freepic a:visited {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #808080;
+}
+/* line 134, style.scss */
+.freepic a:active {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #808080;
+}
+/* line 139, style.scss */
+.freepic a:hover {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #808080;
+}
+
+/* line 148, style.scss */
+.main {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* line 154, style.scss */
+.sub_forms {
+  padding: 0 20px 0 20px;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+/* line 164, style.scss */
+.sub_forms * {
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 30 \2502  @import \"compass\";\d\a    \2502          ^^^^^^^^^\a    \2575 \a   style.scss 30:9  root stylesheet";
+}
+/* line 167, style.scss */
+.sub_forms label {
+  margin-bottom: 4px;
+}
+/* line 170, style.scss */
+.sub_forms input {
+  text-indent: 11px;
+  width: 100%;
+  height: 46px;
+  font-size: inherit;
+  font-family: "Open Sans", sans-serif;
+  color: inherit;
+  border: none;
+  border-radius: 23px;
+}
+/* line 184, style.scss */
+.sub_forms input:focus {
+  outline: none;
+}
+/* line 188, style.scss */
+.sub_forms .sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 80px;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #000;
+}
+/* line 202, style.scss */
+.sub_forms .sub:hover {
+  background-color: #4d4d4d;
+}
+
+/* line 208, style.scss */
+.forms_cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 33px;
+}
+
+/* секция с текстом:*/
+/* line 219, style.scss */
+.main_text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 33px;
+  margin-bottom: 80px;
+  text-align: center;
+  color: #000;
+}
+/* line 227, style.scss */
+.main_text > * {
+  line-height: 200%;
+}
+/* line 232, style.scss */
+.main_text h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+/* line 239, style.scss */
+.main_text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+/* line 246, style.scss */
+.main_text .text_blok a:link {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f2952d;
+}
+/* line 253, style.scss */
+.main_text .text_blok a:visited {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f2952d;
+}
+/* line 259, style.scss */
+.main_text .text_blok a:active {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+/* line 264, style.scss */
+.main_text .text_blok a:hover {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+/* line 271, style.scss */
+.main_text .marked_text {
+  font-weight: bold;
+}
+
+/* футер и его ссылки: */
+/* line 277, style.scss */
+.footer {
+  text-align: center;
+  padding: 3em;
+  font-size: 14px;
+  background-color: #333333;
+  color: #fff;
+}
+/* line 284, style.scss */
+.footer a {
+  color: #fff;
+}
+/* line 286, style.scss */
+.footer a:visited {
+  color: #fff;
+}
+/* line 290, style.scss */
+.footer a:active {
+  color: #fff;
+}
+/* line 294, style.scss */
+.footer a:hover {
+  text-decoration: none;
+  color: #eeb16d;
+}
+
+@media (max-width: 1250px) {
+  /* line 304, style.scss */
+  body {
+    background-size: 1252px;
+    background-position-y: top;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 315, style.scss */
+  body {
+    background-size: cover;
+    background-size: 1200px;
+  }
+
+  /* line 319, style.scss */
+  .header {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 980px) {
+  /* line 326, style.scss */
+  body {
+    background-size: 982px;
+  }
 }
